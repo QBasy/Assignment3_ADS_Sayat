@@ -8,6 +8,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Stack (on LinkedList) - 1\nQueue (on ArrayList) - 2");
         int n = scanner.nextInt();
+        if (n > 2) {
+            System.out.println("Don't be a 🤡");
+            System.exit(0);
+        }
         switch (n)
         {
             case 1 ->
@@ -97,7 +101,6 @@ public class Main {
                     }
                 }
             }
-            case 3 -> System.out.println("Don't be a 🤡");
         }
     }
 }
