@@ -27,24 +27,25 @@ public class Main {
                         case 2 ->
                         {
                             stack.popMethod();
+                            System.out.println("Removed");
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 3 ->
                         {
-                            stack.peekMethod();
+                            System.out.println(stack.peekMethod());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 4 ->
                         {
-                            stack.isEmpty();
+                            System.out.println(stack.isEmpty());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 5 ->
                         {
-                            stack.getSize();
+                            System.out.println(stack.getSize());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
@@ -67,13 +68,13 @@ public class Main {
                     {
                         case 2 ->
                         {
-                            queue.dequeue();
+                            System.out.println(queue.dequeue());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 3 ->
                         {
-                            queue.peek();
+                            System.out.println(queue.peek());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
@@ -89,7 +90,7 @@ public class Main {
                         }
                         case 5 ->
                         {
-                            queue.getSize();
+                            System.out.println(queue.getSize());
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
