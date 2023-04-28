@@ -182,7 +182,8 @@ Boolean fucntion checks is query empty and returns False or True.
 
 # Class LinkedListStack [Link](src/LinkedListStack.java)
 
-# Function :one: ```pushMethod()```
+# Function :one: ```pushMethod()```. 
+Adds an element to the top of the stack by using method ```addFirst()```.
 
 ```java
     public void pushMethod(T data)
@@ -191,7 +192,9 @@ Boolean fucntion checks is query empty and returns False or True.
     }
 ```
 
-# Function :two: ```popMethod()```
+# Function :two: ```popMethod()```.
+1) Removes and returns the top element of the stack by using method ```removeFirst()```.
+2) Also it checks is query empty and throwing exception ```EmptyStackException()```.
 
 ```java
     public void popMethod()
@@ -204,8 +207,9 @@ Boolean fucntion checks is query empty and returns False or True.
     }
 ```
 
-# Function :three: ```peekMethod()```
-
+# Function :three: ```peekMethod()```.
+1) Returns the top element of the stack without removing it by using methond ```peek()```.
+2) Also it checks is query empty and throwing exception ```EmptyStackException()```.
 ```java
     public T peekMethod()
     {
@@ -217,7 +221,8 @@ Boolean fucntion checks is query empty and returns False or True.
     }
 ```
 
-# Function :four: ```getSize()```
+# Function :four: ```getSize()```.
+Returns size number the number of elements in queue by using method ```size()```.
 
 ```java
     public int getSize()
@@ -225,7 +230,8 @@ Boolean fucntion checks is query empty and returns False or True.
         return stack.size();
     }
 ```
-# Function :five: ```isEmpty()```
+# Function :five: ```isEmpty()```.
+Boolean fucntion checks is query empty and returns False or True.
 
 ```java
     public boolean isEmpty()
