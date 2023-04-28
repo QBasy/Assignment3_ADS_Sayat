@@ -14,9 +14,14 @@ public class LinkedListStack<T> {
         stack.addFirst(data);
     }
 
+    public boolean isEmpty()
+    {
+        return stack.isEmpty();
+    }
+
     public T popMethod()
     {
-        if (stack.isEmpty())
+        if (isEmpty())
         {
             throw new EmptyStackException();
         }
@@ -25,16 +30,11 @@ public class LinkedListStack<T> {
 
     public T peekMethod()
     {
-        if (stack.isEmpty())
+        if (isEmpty())
         {
             throw new EmptyStackException();
         }
         return stack.getFirst();
-    }
-
-    public boolean isEmpty()
-    {
-        return stack.isEmpty();
     }
 
     public int getSize()
