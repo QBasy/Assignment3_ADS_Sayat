@@ -13,6 +13,10 @@ The Main class is created to call each class by using Scanner and methods (switc
         int a = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Stack (on LinkedList) - 1\nQueue (on ArrayList) - 2");
+        if (n > 2) {
+            System.out.println("Don't be a 🤡");
+            System.exit(0);
+        }
         int n = scanner.nextInt();
         switch (n)
         {
@@ -21,6 +25,7 @@ The Main class is created to call each class by using Scanner and methods (switc
                 LinkedListStack<String> stack = new LinkedListStack<>();
                 System.out.println("how many pushes?");
                 int case1 = scanner.nextInt();
+                
                 for (int i = 0; i < case1; i++)
                 {
                     stack.pushMethod(scanner.next());
@@ -103,7 +108,6 @@ The Main class is created to call each class by using Scanner and methods (switc
                     }
                 }
             }
-            case 3 -> System.out.println("Don't be a 🤡");
         }
 ``` 
 
