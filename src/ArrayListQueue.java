@@ -28,8 +28,11 @@ public class ArrayListQueue<T> {
         {
             throw new NoSuchElementException();
         }
-        return queue.get(0)
+        return queue.get(0);
     }
 
-
+    public int getSize()
+    {
+        return queue.size();
+    }
 }
