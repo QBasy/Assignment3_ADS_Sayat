@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -44,11 +45,42 @@ public class Main {
                         }
                     }
             case 2:
+                ArrayListQueue<Integer> ALQueue = new ArrayListQueue<>();
+                System.out.println("how many queues?");
+                int case2 = scanner.nextInt();
+                for (int i = 0; i < case2; i++)
+                {
+                    ALQueue.enqueue(scanner.nextInt());
+                }
                 while (a == 0)
                 {
-                    System.out.println("Stack implementation\nPush - 1\nPop - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
-                    switch (scanner.nextInt()) {
-                        case 1:
+                    System.out.println("Queue implementation\nDequeue - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
+                    switch (scanner.nextInt())
+                    {
+                        case 2:
+                            ALQueue.dequeue();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                            break;
+                        case 3:
+                            ALQueue.peek();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                            break;
+                        case 4:
+                            if (ALQueue.isEmpty())
+                            {
+                                System.out.println("Empty");
+                            } else
+                                System.out.println("Not Empty");
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                            break;
+                        case 5:
+                            ALQueue.getSize();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                            break;
                     }
                 }
         }
