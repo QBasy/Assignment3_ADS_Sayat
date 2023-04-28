@@ -115,7 +115,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 This Class was created to work with "Queue".
 
-#1 Function ```enqueue()```.
+# Function :one: ```enqueue()```.
 Adds an element to the back of the queue by using method ```add```.
 
 ```java
@@ -125,7 +125,7 @@ Adds an element to the back of the queue by using method ```add```.
     }
 ```
 
-#2 Function ```dequeue()```.
+# Function :two: ```dequeue()```.
 1) Removes by using method ```remove```.
 2) Then returns the front element of the queue by using method ```remove```.
 3) Also it checks is query empty and throwing exception ```NoSuchElementException()```.
@@ -141,7 +141,7 @@ Adds an element to the back of the queue by using method ```add```.
     }
 ```
 
-# 3 Function ```peek()```.
+# Function :three: ```peek()```.
 1) Returns the front element of the queue without removing it.
 2) Also it checks is query empty and throwing exception ```NoSuchElementException()```.
 
@@ -156,7 +156,7 @@ Adds an element to the back of the queue by using method ```add```.
     }
 ```
 
-# 4 Function ```getSize()```.
+# Function :four: ```getSize()```.
 Returns size number the number of elements in queue by using method ```size()```.
 
 ```java
@@ -166,7 +166,7 @@ Returns size number the number of elements in queue by using method ```size()```
     }
 ```
 
-# 5 Function ```isEmpty```.
+# Function :five: ```isEmpty```.
 Boolean fucntion checks is query empty and returns False or True.
 
 ```java
@@ -181,3 +181,55 @@ Boolean fucntion checks is query empty and returns False or True.
 
 
 # Class LinkedListStack [Link](src/LinkedListStack.java)
+
+# Function :one: ```pushMethod()```
+
+```java
+    public void pushMethod(T data)
+    {
+        stack.addFirst(data);
+    }
+```
+
+# Function :two: ```popMethod()```
+
+```java
+    public void popMethod()
+    {
+        if (isEmpty())
+        {
+            throw new EmptyStackException();
+        }
+        stack.removeFirst();
+    }
+```
+
+# Function :three: ```peekMethod()```
+
+```java
+    public T peekMethod()
+    {
+        if (isEmpty())
+        {
+            throw new EmptyStackException();
+        }
+        return stack.peek();
+    }
+```
+
+# Function :four: ```getSize()```
+
+```java
+    public int getSize()
+    {
+        return stack.size();
+    }
+```
+# Function :five: ```isEmpty()```
+
+```java
+    public boolean isEmpty()
+    {
+        return stack.isEmpty();
+    }
+```
