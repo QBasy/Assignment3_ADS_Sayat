@@ -32,5 +32,14 @@ public class LinkedListStack<T> {
         return stack.getFirst();
     }
 
-    public
+    public boolean isEmpty()
+    {
+        return stack.isEmpty();
+    }
+
+    public int getSize()
+    {
+        return stack.size();
+    }
 }
+
