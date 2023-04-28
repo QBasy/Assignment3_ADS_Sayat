@@ -48,6 +48,7 @@ public class Main {
                             }
                         }
                     }
+                    break;
             case 2:
                 ArrayListQueue<Integer> queue = new ArrayListQueue<>();
                 System.out.println("how many queues?");
@@ -91,8 +92,10 @@ public class Main {
                         }
                     }
                 }
+                break;
             case 3:
                 System.out.println("Don't be a 🤡");
+                break;
         }
     }
 }
