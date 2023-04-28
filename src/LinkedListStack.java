@@ -23,5 +23,14 @@ public class LinkedListStack<T> {
         return stack.removeFirst();
     }
 
+    public T peekMethod()
+    {
+        if (stack.isEmpty())
+        {
+            throw new EmptyStackException();
+        }
+        return stack.getFirst();
+    }
 
+    public
 }
