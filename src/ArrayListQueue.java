@@ -22,4 +22,14 @@ public class ArrayListQueue<T> {
         return queue.remove(0);
     }
 
+    public T peek()
+    {
+        if (isEmpty())
+        {
+            throw new NoSuchElementException();
+        }
+        return queue.get(0)
+    }
+
+
 }
