@@ -111,7 +111,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-#Class ArrayListQueue [Link](src/ArrayListQueue.java)
+# Class ArrayListQueue [Link](src/ArrayListQueue.java)
 
 This Class was created to work with "Queue".
 
@@ -141,7 +141,7 @@ Adds an element to the back of the queue by using method ```add```.
     }
 ```
 
-#3 Function ```peek()```.
+# 3 Function ```peek()```.
 1) Returns the front element of the queue without removing it.
 2) Also it checks is query empty and throwing exception ```NoSuchElementException()```.
 
@@ -156,7 +156,7 @@ Adds an element to the back of the queue by using method ```add```.
     }
 ```
 
-#4 Function ```getSize()```.
+# 4 Function ```getSize()```.
 Returns size number the number of elements in queue by using method ```size()```.
 
 ```java
@@ -166,7 +166,7 @@ Returns size number the number of elements in queue by using method ```size()```
     }
 ```
 
-#5 Function ```isEmpty```.
+# 5 Function ```isEmpty```.
 Boolean fucntion checks is query empty and returns False or True.
 
 ```java
@@ -180,4 +180,4 @@ Boolean fucntion checks is query empty and returns False or True.
 ---
 
 
-#Class LinkedListStack [Link](src/LinkedListStack.java)
+# Class LinkedListStack [Link](src/LinkedListStack.java)
