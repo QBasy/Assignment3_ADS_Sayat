@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -19,29 +18,34 @@ public class Main {
                     {
                         LLStack.pushMethod(scanner.next());
                     }
-                    while (a == 0) {
+                    while (a == 0)
+                    {
                         System.out.println("Stack implementation\nPop - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
                         switch (scanner.nextInt()) {
-                            case 2:
+                            case 2 ->
+                            {
                                 LLStack.popMethod();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
-                                break;
-                            case 3:
+                            }
+                            case 3 ->
+                            {
                                 LLStack.peekMethod();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
-                                break;
-                            case 4:
+                            }
+                            case 4 ->
+                            {
                                 LLStack.isEmpty();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
-                                break;
-                            case 5:
+                            }
+                            case 5 ->
+                            {
                                 LLStack.getSize();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
-                                break;
+                            }
                         }
                     }
             case 2:
@@ -57,17 +61,20 @@ public class Main {
                     System.out.println("Queue implementation\nDequeue - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
                     switch (scanner.nextInt())
                     {
-                        case 2:
+                        case 2 ->
+                        {
                             ALQueue.dequeue();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
-                            break;
-                        case 3:
+                        }
+                        case 3 ->
+                        {
                             ALQueue.peek();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
-                            break;
-                        case 4:
+                        }
+                        case 4 ->
+                        {
                             if (ALQueue.isEmpty())
                             {
                                 System.out.println("Empty");
@@ -75,12 +82,13 @@ public class Main {
                                 System.out.println("Not Empty");
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
-                            break;
-                        case 5:
+                        }
+                        case 5 ->
+                        {
                             ALQueue.getSize();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
-                            break;
+                        }
                     }
                 }
         }
