@@ -10,46 +10,49 @@ public class Main {
         int n = scanner.nextInt();
         switch (n)
         {
-            case 1:
-                    LinkedListStack<String> stack = new LinkedListStack<>();
-                    System.out.println("how many pushes?");
-                    int case1 = scanner.nextInt();
-                    for (int i = 0; i < case1; i++)
+            case 1 ->
+            {
+                LinkedListStack<String> stack = new LinkedListStack<>();
+                System.out.println("how many pushes?");
+                int case1 = scanner.nextInt();
+                for (int i = 0; i < case1; i++)
+                {
+                    stack.pushMethod(scanner.next());
+                }
+                while (a == 0)
+                {
+                    System.out.println("Stack implementation\nPop - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
+                    switch (scanner.nextInt())
                     {
-                        stack.pushMethod(scanner.next());
-                    }
-                    while (a == 0)
-                    {
-                        System.out.println("Stack implementation\nPop - 2\nPeek - 3\nIs Empty - 4\nGet Size - 5");
-                        switch (scanner.nextInt()) {
-                            case 2 ->
-                            {
-                                stack.popMethod();
-                                System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
-                                a = scanner.nextInt();
-                            }
-                            case 3 ->
-                            {
-                                stack.peekMethod();
-                                System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
-                                a = scanner.nextInt();
-                            }
-                            case 4 ->
-                            {
-                                stack.isEmpty();
-                                System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
-                                a = scanner.nextInt();
-                            }
-                            case 5 ->
-                            {
-                                stack.getSize();
-                                System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
-                                a = scanner.nextInt();
-                            }
+                        case 2 ->
+                        {
+                            stack.popMethod();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                        }
+                        case 3 ->
+                        {
+                            stack.peekMethod();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                        }
+                        case 4 ->
+                        {
+                            stack.isEmpty();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
+                        }
+                        case 5 ->
+                        {
+                            stack.getSize();
+                            System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
+                            a = scanner.nextInt();
                         }
                     }
-                    break;
-            case 2:
+                }
+            }
+            case 2 ->
+            {
                 ArrayListQueue<Integer> queue = new ArrayListQueue<>();
                 System.out.println("how many queues?");
                 int case2 = scanner.nextInt();
@@ -92,10 +95,8 @@ public class Main {
                         }
                     }
                 }
-                break;
-            case 3:
-                System.out.println("Don't be a 🤡");
-                break;
+            }
+            case 3 -> System.out.println("Don't be a 🤡");
         }
     }
 }
