@@ -11,12 +11,12 @@ public class Main {
         switch (n)
         {
             case 1:
-                    LinkedListStack<String> LLStack = new LinkedListStack<>();
+                    LinkedListStack<String> stack = new LinkedListStack<>();
                     System.out.println("how many pushes?");
                     int case1 = scanner.nextInt();
                     for (int i = 0; i < case1; i++)
                     {
-                        LLStack.pushMethod(scanner.next());
+                        stack.pushMethod(scanner.next());
                     }
                     while (a == 0)
                     {
@@ -24,37 +24,37 @@ public class Main {
                         switch (scanner.nextInt()) {
                             case 2 ->
                             {
-                                LLStack.popMethod();
+                                stack.popMethod();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
                             }
                             case 3 ->
                             {
-                                LLStack.peekMethod();
+                                stack.peekMethod();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
                             }
                             case 4 ->
                             {
-                                LLStack.isEmpty();
+                                stack.isEmpty();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
                             }
                             case 5 ->
                             {
-                                LLStack.getSize();
+                                stack.getSize();
                                 System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                                 a = scanner.nextInt();
                             }
                         }
                     }
             case 2:
-                ArrayListQueue<Integer> ALQueue = new ArrayListQueue<>();
+                ArrayListQueue<Integer> queue = new ArrayListQueue<>();
                 System.out.println("how many queues?");
                 int case2 = scanner.nextInt();
                 for (int i = 0; i < case2; i++)
                 {
-                    ALQueue.enqueue(scanner.nextInt());
+                    queue.enqueue(scanner.nextInt());
                 }
                 while (a == 0)
                 {
@@ -63,19 +63,19 @@ public class Main {
                     {
                         case 2 ->
                         {
-                            ALQueue.dequeue();
+                            queue.dequeue();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 3 ->
                         {
-                            ALQueue.peek();
+                            queue.peek();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
                         case 4 ->
                         {
-                            if (ALQueue.isEmpty())
+                            if (queue.isEmpty())
                             {
                                 System.out.println("Empty");
                             } else
@@ -85,7 +85,7 @@ public class Main {
                         }
                         case 5 ->
                         {
-                            ALQueue.getSize();
+                            queue.getSize();
                             System.out.println("go back to the selection?\n 0 - yes\n 1 - no");
                             a = scanner.nextInt();
                         }
