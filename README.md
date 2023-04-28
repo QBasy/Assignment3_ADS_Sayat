@@ -7,7 +7,7 @@
 
 # Main 🚀 [Link](src/Main.java)
 
-The Main class is created to call each class by using Scanner and methods (switch-case), it 
+The Main class is created to call each class by using Scanner and methods (switch-case)
 
 ```java
         int a = 0;
@@ -105,4 +105,79 @@ The Main class is created to call each class by using Scanner and methods (switc
             }
             case 3 -> System.out.println("Don't be a 🤡");
         }
-```      
+``` 
+
+
+---
+
+
+#Class ArrayListQueue [Link](src/ArrayListQueue.java)
+
+This Class was created to work with "Queue".
+
+#1 Function ```enqueue()```.
+Adds an element to the back of the queue by using method ```add```.
+
+```java
+    public void enqueue(T data)
+    {
+        queue.add(data);
+    }
+```
+
+#2 Function ```dequeue()```.
+1) Removes by using method ```remove```.
+2) Then returns the front element of the queue by using method ```remove```.
+3) Also it checks is query empty and throwing exception ```NoSuchElementException()```.
+
+```java
+    public T dequeue ()
+    {
+        if (isEmpty())
+        {
+            throw new NoSuchElementException();
+        }
+        return queue.remove(0);
+    }
+```
+
+#3 Function ```peek()```.
+1) Returns the front element of the queue without removing it.
+2) Also it checks is query empty and throwing exception ```NoSuchElementException()```.
+
+```java
+    public T peek()
+    {
+        if (isEmpty())
+        {
+            throw new NoSuchElementException();
+        }
+        return queue.get(0);
+    }
+```
+
+#4 Function ```getSize()```.
+Returns size number the number of elements in queue by using method ```size()```.
+
+```java
+    public int getSize()
+    {
+        return queue.size();
+    }
+```
+
+#5 Function ```isEmpty```.
+Boolean fucntion checks is query empty and returns False or True.
+
+```java
+    public boolean isEmpty()
+    {
+        return queue.isEmpty();
+    }
+```
+
+
+---
+
+
+#Class LinkedListStack [Link](src/LinkedListStack.java)
